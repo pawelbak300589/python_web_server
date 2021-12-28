@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About me</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='bolt.ico') }}"
+    />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <h4>Date: {{ year }}</h4>
+    <p>Some blog post</p>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+  </body>
+</html>
